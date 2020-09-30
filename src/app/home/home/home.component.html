@@ -1,0 +1,47 @@
+<div class="hdimg">
+  <h4>IP Address Tracker</h4>
+  <div class="wrap">
+    <div class="search">
+      <input
+        type="text"
+        class="searchTerm"
+        placeholder="Search for any IP address or domain"
+        [(ngModel)]="search"
+      />
+      <button type="submit" (click)="onSub(search)" class="searchButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card-body b-right">
+          <h4>IP Address</h4>
+          <p>{{ ipaddress }}</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card-body b-right">
+          <h4>Location</h4>
+          <p>{{ city }},{{ country }} {{ postalCode }}</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card-body b-right">
+          <h4>Timezone</h4>
+          <p>{{ timezone }}</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card-body">
+          <h4>ISP</h4>
+          <p>{{ isp }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="map"></div>

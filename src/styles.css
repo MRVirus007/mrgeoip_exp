@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Rubik", sans-serif;
+}
+body {
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+  .row {
+    display: block !important;
+    margin-left: 0 !important;
+  }
+  .col-sm-3 {
+    max-width: inherit !important;
+  }
+
+  .hdimg {
+    height: 273px !important;
+  }
+
+  .card {
+    top: 8% !important;
+  }
+
+  .b-right {
+    border-right: none !important;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  #map {
+    padding-top: 30% !important;
+  }
+}
